@@ -1,11 +1,11 @@
-package example
+package vipion
 
 import scala.scalajs.js
 import js.annotation.JSExport
 import org.scalajs.dom
 
 @JSExport
-object ScalaJSExample {
+object Vipion {
   @JSExport
   def main(): Unit = {
     val paragraph = dom.document.createElement("p")
