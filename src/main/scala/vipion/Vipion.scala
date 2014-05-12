@@ -32,8 +32,8 @@ class VipionGame private (
 
   lazy val winner: Option[Player] = {
     (for {
-      x <- Iterable.range(0, 4)
-      y <- Iterable.range(0, 4)
+      x <- Iterable(0, 1, 2, 3)
+      y <- Iterable(0, 1, 2, 3)
       s = board(x, y)
       p <- (s match {
         case SquareState.Mark(p) => List(p)
